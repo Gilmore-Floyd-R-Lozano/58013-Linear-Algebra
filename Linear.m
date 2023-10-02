@@ -16,3 +16,12 @@ x3 = a3/a
 eq1 = x1 + x2 + x3
 eq2 = x1 + 2*x2 + 2*x3
 eq3 = x1 + 2*x2 + 3*x3
+
+syms x y z
+eq1 = x + y + z ==5
+eq2 = x + 2*y + 2*z == 6
+eq3 = x + 2*y + 3*z == 8
+sol = solve([eq1,eq2,eq3],[x,y,z])
+xsol = sol.x
+ysol = sol.y
+zsol = sol.z
